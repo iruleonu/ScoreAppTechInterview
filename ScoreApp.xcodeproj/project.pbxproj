@@ -6,15 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		055EEF7C2D390BFE00785BC4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 055EEF7B2D390BFE00785BC4 /* RxSwift */; };
+		055EEFA82D39572100785BC4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 055EEFA72D39572100785BC4 /* RxCocoa */; };
+		055EEFAA2D39572100785BC4 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 055EEFA92D39572100785BC4 /* RxRelay */; };
+		055EEFAE2D3957EE00785BC4 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 055EEFAD2D3957EE00785BC4 /* RxRelay */; };
+		055EEFB02D3957EE00785BC4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 055EEFAF2D3957EE00785BC4 /* RxSwift */; };
+		055EEFB22D3957EE00785BC4 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 055EEFB12D3957EE00785BC4 /* RxTest */; };
+		055EEFB82D3963A000785BC4 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 055EEFB72D3963A000785BC4 /* RxBlocking */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		055EEF5C2D390AD200785BC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 055EEF3D2D390AC800785BC4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 055EEF442D390AC800785BC4;
-			remoteInfo = ScoreApp;
-		};
-		055EEF662D390AD200785BC4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 055EEF3D2D390AC800785BC4 /* Project object */;
 			proxyType = 1;
@@ -26,7 +29,6 @@
 /* Begin PBXFileReference section */
 		055EEF452D390AC800785BC4 /* ScoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055EEF5B2D390AD200785BC4 /* ScoreAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		055EEF652D390AD200785BC4 /* ScoreAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -53,11 +55,6 @@
 			path = ScoreAppTests;
 			sourceTree = "<group>";
 		};
-		055EEF682D390AD200785BC4 /* ScoreAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ScoreAppUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				055EEFAA2D39572100785BC4 /* RxRelay in Frameworks */,
+				055EEFA82D39572100785BC4 /* RxCocoa in Frameworks */,
+				055EEF7C2D390BFE00785BC4 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		055EEF622D390AD200785BC4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				055EEFB02D3957EE00785BC4 /* RxSwift in Frameworks */,
+				055EEFB82D3963A000785BC4 /* RxBlocking in Frameworks */,
+				055EEFB22D3957EE00785BC4 /* RxTest in Frameworks */,
+				055EEFAE2D3957EE00785BC4 /* RxRelay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +87,7 @@
 			children = (
 				055EEF472D390AC800785BC4 /* ScoreApp */,
 				055EEF5E2D390AD200785BC4 /* ScoreAppTests */,
-				055EEF682D390AD200785BC4 /* ScoreAppUITests */,
+				055EEF7A2D390BFE00785BC4 /* Frameworks */,
 				055EEF462D390AC800785BC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,9 +97,15 @@
 			children = (
 				055EEF452D390AC800785BC4 /* ScoreApp.app */,
 				055EEF5B2D390AD200785BC4 /* ScoreAppTests.xctest */,
-				055EEF652D390AD200785BC4 /* ScoreAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		055EEF7A2D390BFE00785BC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +128,9 @@
 			);
 			name = ScoreApp;
 			packageProductDependencies = (
+				055EEF7B2D390BFE00785BC4 /* RxSwift */,
+				055EEFA72D39572100785BC4 /* RxCocoa */,
+				055EEFA92D39572100785BC4 /* RxRelay */,
 			);
 			productName = ScoreApp;
 			productReference = 055EEF452D390AC800785BC4 /* ScoreApp.app */;
@@ -148,33 +154,14 @@
 			);
 			name = ScoreAppTests;
 			packageProductDependencies = (
+				055EEFAD2D3957EE00785BC4 /* RxRelay */,
+				055EEFAF2D3957EE00785BC4 /* RxSwift */,
+				055EEFB12D3957EE00785BC4 /* RxTest */,
+				055EEFB72D3963A000785BC4 /* RxBlocking */,
 			);
 			productName = ScoreAppTests;
 			productReference = 055EEF5B2D390AD200785BC4 /* ScoreAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		055EEF642D390AD200785BC4 /* ScoreAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 055EEF762D390AD200785BC4 /* Build configuration list for PBXNativeTarget "ScoreAppUITests" */;
-			buildPhases = (
-				055EEF612D390AD200785BC4 /* Sources */,
-				055EEF622D390AD200785BC4 /* Frameworks */,
-				055EEF632D390AD200785BC4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				055EEF672D390AD200785BC4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				055EEF682D390AD200785BC4 /* ScoreAppUITests */,
-			);
-			name = ScoreAppUITests;
-			packageProductDependencies = (
-			);
-			productName = ScoreAppUITests;
-			productReference = 055EEF652D390AD200785BC4 /* ScoreAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -193,10 +180,6 @@
 						CreatedOnToolsVersion = 16.1;
 						TestTargetID = 055EEF442D390AC800785BC4;
 					};
-					055EEF642D390AD200785BC4 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = 055EEF442D390AC800785BC4;
-					};
 				};
 			};
 			buildConfigurationList = 055EEF402D390AC800785BC4 /* Build configuration list for PBXProject "ScoreApp" */;
@@ -208,6 +191,9 @@
 			);
 			mainGroup = 055EEF3C2D390AC800785BC4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				055EEF792D390BA000785BC4 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 055EEF462D390AC800785BC4 /* Products */;
 			projectDirPath = "";
@@ -215,7 +201,6 @@
 			targets = (
 				055EEF442D390AC800785BC4 /* ScoreApp */,
 				055EEF5A2D390AD200785BC4 /* ScoreAppTests */,
-				055EEF642D390AD200785BC4 /* ScoreAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,13 +214,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		055EEF592D390AD200785BC4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		055EEF632D390AD200785BC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,13 +237,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		055EEF612D390AD200785BC4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,11 +244,6 @@
 			isa = PBXTargetDependency;
 			target = 055EEF442D390AC800785BC4 /* ScoreApp */;
 			targetProxy = 055EEF5C2D390AD200785BC4 /* PBXContainerItemProxy */;
-		};
-		055EEF672D390AD200785BC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 055EEF442D390AC800785BC4 /* ScoreApp */;
-			targetProxy = 055EEF662D390AD200785BC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -491,38 +457,6 @@
 			};
 			name = Release;
 		};
-		055EEF772D390AD200785BC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ScoreAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ScoreApp;
-			};
-			name = Debug;
-		};
-		055EEF782D390AD200785BC4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ScoreAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ScoreApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,16 +487,56 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		055EEF762D390AD200785BC4 /* Build configuration list for PBXNativeTarget "ScoreAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				055EEF772D390AD200785BC4 /* Debug */,
-				055EEF782D390AD200785BC4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		055EEF792D390BA000785BC4 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		055EEF7B2D390BFE00785BC4 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 055EEF792D390BA000785BC4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		055EEFA72D39572100785BC4 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 055EEF792D390BA000785BC4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		055EEFA92D39572100785BC4 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 055EEF792D390BA000785BC4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		055EEFAD2D3957EE00785BC4 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 055EEF792D390BA000785BC4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		055EEFAF2D3957EE00785BC4 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 055EEF792D390BA000785BC4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		055EEFB12D3957EE00785BC4 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 055EEF792D390BA000785BC4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		055EEFB72D3963A000785BC4 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 055EEF792D390BA000785BC4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 055EEF3D2D390AC800785BC4 /* Project object */;
 }
